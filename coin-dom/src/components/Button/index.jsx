@@ -1,8 +1,12 @@
 import React from "react";
 import "./styles.css";
 
-function Button({ text }) {
-  return <div className="btn">{text}</div>;
+function Button({ text, onClick, outlined }) {
+  return (
+    <div className={outlined ? "outline-btn" : "btn"} onClick={() => onClick()}>
+      {text}
+    </div>
+  );
 }
 
 export default Button;

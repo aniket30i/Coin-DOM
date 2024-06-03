@@ -1,0 +1,20 @@
+.flex-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 1.5rem 3rem;
+}
+
+.track-know-heading,
+.real-time-heading {
+  font-size: 6rem;
+  margin: 0;
+}
+
+.track-know-heading {
+  color: var(--white);
+}
+
+.real-time-heading {
+  color: var(--purple);
+}

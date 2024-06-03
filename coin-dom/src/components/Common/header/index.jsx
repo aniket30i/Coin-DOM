@@ -22,8 +22,12 @@ function Header() {
         <a href="/">
           <p className="link">Educate</p>
         </a>
-        <a href="/">
-          <Button text="Dashboard" />
+        <a href="#">
+          <Button
+            text={"Dashboard"}
+            onClick={() => console.log("Button clicked")}
+            outlined={false}
+          />
         </a>
       </div>
       <div className="mobile-drawer">
