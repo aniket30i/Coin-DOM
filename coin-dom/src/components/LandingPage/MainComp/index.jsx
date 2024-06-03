@@ -45,7 +45,7 @@ function MainComp() {
         </motion.div>
       </div>
       <div className="phone-container">
-        <img src={iphone} className="iphone" />
+        <motion.img src={iphone} className="iphone" />
         <img src={gradient} className="gradient" />
       </div>
     </div>
