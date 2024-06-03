@@ -1,7 +1,7 @@
 .btn {
   background-color: var(--purple);
   color: var(--white);
-  padding: 0.7rem 1.5rem;
+  padding: 0.5rem 1.5rem;
   border-radius: 3rem;
   font-weight: 600;
   cursor: pointer;
@@ -24,6 +24,8 @@
   border-radius: 3rem;
   font-weight: 600;
   cursor: pointer;
+  min-width: 100px;
+  text-align: center;
 }
 
 .outline-btn:hover {
