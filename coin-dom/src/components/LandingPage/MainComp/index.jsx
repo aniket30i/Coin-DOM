@@ -19,7 +19,7 @@ function MainComp() {
         </motion.h1>
         <motion.h1
           className="real-time-heading"
-          initial={{ opacity: 0, y: 50 }}
+          initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.5 }}
         >
@@ -27,7 +27,7 @@ function MainComp() {
         </motion.h1>
         <motion.p
           className="info-text"
-          initial={{ opacity: 0, y: 50 }}
+          initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 1 }}
         >
@@ -36,8 +36,8 @@ function MainComp() {
         </motion.p>
         <motion.div
           className="btn-flex"
-          initial={{ opacity: 0, x: 50 }}
-          animate={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 1.5 }}
         >
           <Button text={"Dashboard"} />
@@ -45,7 +45,18 @@ function MainComp() {
         </motion.div>
       </div>
       <div className="phone-container">
-        <motion.img src={iphone} className="iphone" />
+        <motion.img
+          src={iphone}
+          className="iphone"
+          initial={{ y: -10 }}
+          animate={{ y: 10 }}
+          transition={{
+            duration: 3,
+            type: "smooth",
+            repeatType: "mirror",
+            repeat: Infinity,
+          }}
+        />
         <img src={gradient} className="gradient" />
       </div>
     </div>
