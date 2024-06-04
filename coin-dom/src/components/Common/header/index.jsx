@@ -21,7 +21,7 @@ function Header() {
           <p className="link">Watchlist</p>
         </Link>
         <Link to="/educate">
-          <p className="link">Educate</p>
+          <p className="link">Learn</p>
         </Link>
         <Link to="/dashboard">
           <Button

@@ -32,7 +32,7 @@ function MainComp() {
           transition={{ duration: 0.5, delay: 1 }}
         >
           Learn and Track crypto through public apis in real time. Start your
-          journey with a click on Educate.
+          journey with a click on Learn.
         </motion.p>
         <motion.div
           className="btn-flex"

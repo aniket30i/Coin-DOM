@@ -25,7 +25,7 @@ export default function AnchorTemporaryDrawer() {
             <p className="link">Watchlist</p>
           </Link>
           <Link href="/educate">
-            <p className="link">Educate</p>
+            <p className="link">Learn</p>
           </Link>
           <Link href="/dashboard">
             <p className="link">Dashboard</p>

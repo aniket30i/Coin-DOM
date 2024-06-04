@@ -25,7 +25,7 @@ const style = {
   textTransform: "capitalize",
 };
 
-export default function TabsComponent() {
+export default function TabsComponent({ coins }) {
   const [value, setValue] = useState("grid");
 
   const handleChange = (event, newValue) => {
@@ -44,8 +44,21 @@ export default function TabsComponent() {
             <Tab label="Grid" value="grid" sx={style} />
             <Tab label="List" value="list" sx={style} />
           </TabList>
-          <TabPanel value="grid">Item One</TabPanel>
-          <TabPanel value="list">Item Two</TabPanel>
+          <TabPanel value="grid">
+            <div>
+              {coins.map((item, i) => {
+                return (
+                  <>
+                    <img src={item.image} />
+                    <p key={i}>
+                      {i + 1}.{item.name}
+                    </p>
+                  </>
+                );
+              })}
+            </div>
+          </TabPanel>
+          <TabPanel value="list">mapping for list</TabPanel>
         </TabContext>
       </div>
     </ThemeProvider>
