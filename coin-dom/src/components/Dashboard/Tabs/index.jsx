@@ -57,7 +57,17 @@ export default function TabsComponent({ coins }) {
               })}
             </div>
           </TabPanel>
-          <TabPanel value="list">abc</TabPanel>
+          <TabPanel value="list">
+            <table>
+              {coins.map((item, i) => {
+                return (
+                  <p key={i}>
+                    {i + 1}.{item.id}
+                  </p>
+                );
+              })}
+            </table>
+          </TabPanel>
         </TabContext>
       </div>
     </ThemeProvider>
