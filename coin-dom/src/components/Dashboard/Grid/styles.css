@@ -1,0 +1,28 @@
+.grid-container {
+  width: 350px;
+  height: 350px;
+  background-color: var(--darkgrey);
+  border: 2px solid var(--darkgrey);
+  border-radius: 0.75rem;
+}
+
+.info-flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 1.5rem;
+}
+
+.coin-logo {
+  height: 3.5rem;
+  width: 3.5rem;
+}
+
+.coin-symbol {
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.coin-name {
+}

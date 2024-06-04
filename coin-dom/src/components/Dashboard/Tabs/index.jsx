@@ -7,6 +7,8 @@ import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
 import { color } from "framer-motion";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import Grid from "../Grid";
+import "./styles.css";
 
 const theme = createTheme({
   palette: {
@@ -45,20 +47,17 @@ export default function TabsComponent({ coins }) {
             <Tab label="List" value="list" sx={style} />
           </TabList>
           <TabPanel value="grid">
-            <div>
-              {coins.map((item, i) => {
+            <div className="grid-flex">
+              {coins.map((coin, i) => {
                 return (
-                  <>
-                    <img src={item.image} />
-                    <p key={i}>
-                      {i + 1}.{item.name}
-                    </p>
-                  </>
+                  <div>
+                    <Grid coin={coin} key={i} />
+                  </div>
                 );
               })}
             </div>
           </TabPanel>
-          <TabPanel value="list">mapping for list</TabPanel>
+          <TabPanel value="list">abc</TabPanel>
         </TabContext>
       </div>
     </ThemeProvider>
