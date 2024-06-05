@@ -19,6 +19,10 @@ body {
   font-family: "Inter", "san-serif";
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 ::selection {
   background-color: var(--purple);
 }
@@ -32,4 +36,13 @@ img {
   -webkit-user-drag: none;
   -khtml-user-drag: none;
   -moz-user-drag: none;
+}
+
+.grey-wrapper {
+  display: block;
+  width: 90%;
+  padding: 0rem 0.5rem;
+  background-color: var(--darkgrey);
+  margin: 1.5rem;
+  border-radius: 0.5rem;
 }

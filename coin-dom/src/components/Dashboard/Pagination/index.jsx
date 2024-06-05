@@ -8,7 +8,7 @@ export default function PaginationComponent({ page, handlePageChange }) {
       <Pagination
         count={10}
         page={page}
-        onChange={handlePageChange}
+        onChange={(e, v) => handlePageChange(e, v)}
         sx={{
           color: "var(--white)",
           "& .Mui-selected": {

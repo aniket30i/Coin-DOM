@@ -5,6 +5,7 @@ import axios from "axios";
 import Search from "../components/Dashboard/Search";
 import PaginationComponent from "../components/Dashboard/Pagination";
 import Loader from "../components/Common/loader";
+import BackToTop from "../components/Common/BackToTop";
 
 function DashboardPage() {
   const [coin, setCoin] = useState([]);
@@ -35,7 +36,7 @@ function DashboardPage() {
       .then((response) => {
         console.log(response);
         setCoin(response.data);
-        setPagiantedCoins(coin.slice(0, 10));
+        setPagiantedCoins(response.data.slice(0, 10));
         isLoading(false);
       })
       .catch((error) => {
@@ -46,6 +47,7 @@ function DashboardPage() {
   return (
     <>
       <Header />
+      <BackToTop />
       {loading ? (
         <Loader />
       ) : (
