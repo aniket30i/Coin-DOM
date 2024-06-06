@@ -5,26 +5,32 @@ import Loader from "../components/Common/loader";
 import axios from "axios";
 import { coinObject } from "../functions/convertObject";
 import List from "../components/Dashboard/List";
+import CoinInfo from "../components/Coin";
+import { getCoinData } from "../functions/getCoinData";
+import { getCoinPrices } from "../functions/getCoinPrices";
 
 function CoinPage() {
   const { id } = useParams();
   const [loading, isLoading] = useState(true);
   const [coinData, setCoinData] = useState([]);
+  const [days, setDays] = useState(30);
   useEffect(() => {
     if (id) {
-      axios
-        .get(`https://api.coingecko.com/api/v3/coins/${id}`)
-        .then((response) => {
-          console.log(response);
-          coinObject(setCoinData, response.data);
-          isLoading(false);
-        })
-        .catch((error) => {
-          console.log("error>>", error);
-          isLoading(false);
-        });
+      getData();
     }
   }, [id]);
+
+  async function getData() {
+    const data = await getCoinData(id);
+    if (data) {
+      coinObject(setCoinData, data);
+      const prices = await getCoinPrices(id, days);
+      if (prices.length > 0) {
+        console.log("yes");
+        isLoading(false);
+      }
+    }
+  }
   return (
     <div>
       <Header />
@@ -35,6 +41,7 @@ function CoinPage() {
           <div className="grey-wrapper">
             <List coin={coinData} />
           </div>
+          <CoinInfo heading={coinData.name} desc={coinData.desc} />
         </>
       )}
     </div>

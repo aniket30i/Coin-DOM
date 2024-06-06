@@ -45,4 +45,5 @@ img {
   background-color: var(--darkgrey);
   margin: 1.5rem;
   border-radius: 0.5rem;
+  padding: 0rem 1rem;
 }

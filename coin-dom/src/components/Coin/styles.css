@@ -1,0 +1,16 @@
+.coin-info-heading {
+  padding-top: 1rem;
+}
+
+.coin-info-desc {
+  padding-bottom: 1rem;
+}
+
+.coin-info-desc a {
+  text-decoration: underline !important;
+  font-style: italic;
+}
+
+.coin-info-desc a:hover {
+  color: var(--purple) !important;
+}
