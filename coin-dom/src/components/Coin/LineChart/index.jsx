@@ -4,11 +4,11 @@ import { Chart as ChartJS } from "chart.js/auto";
 
 function LineChart({ chartData, priceType, multiAxis }) {
   const options = {
-    pluggins: {
-      legend: {
-        display: multiAxis ? true : false,
-      },
-    },
+    // pluggins: {
+    //     legend: {
+    //       display: multiAxis ? true : false,
+    //     },
+    // },
     responsive: true,
     interaction: {
       mode: "index",
