@@ -20,6 +20,7 @@ function CoinPage() {
   const [days, setDays] = useState(7);
   const [chartData, setchartData] = useState({});
   const [priceType, setPriceType] = useState("prices");
+
   useEffect(() => {
     if (id) {
       getData();
