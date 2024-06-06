@@ -1,0 +1,13 @@
+.toggle-prices {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}
+
+@media (max-width: 800px) {
+  .toggle-btn {
+    font-size: 0.7rem;
+    padding: 0.5rem;
+  }
+}
