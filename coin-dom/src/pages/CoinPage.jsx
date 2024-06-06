@@ -11,12 +11,13 @@ import LineChart from "../components/Coin/LineChart";
 import { convertDate } from "../functions/convertDate";
 import SelectDays from "../components/Coin/SelectDays";
 import { settingChartData } from "../functions/settingChartData";
+import PriceType from "../components/Coin/PriceType";
 
 function CoinPage() {
   const { id } = useParams();
   const [loading, isLoading] = useState(true);
   const [coinData, setCoinData] = useState([]);
-  const [days, setDays] = useState(30);
+  const [days, setDays] = useState(7);
   const [chartData, setchartData] = useState({});
   useEffect(() => {
     if (id) {
@@ -55,13 +56,13 @@ function CoinPage() {
 
   const handleDaysChange = async (event) => {
     isLoading(true);
-    const prices = await getCoinPrices(id, days);
+    setDays(event.target.value);
+    const prices = await getCoinPrices(id, event.target.value);
     if (prices.length > 0) {
       console.log("yes");
       settingChartData(setchartData, prices);
       isLoading(false);
     }
-    setDays(event.target.value);
   };
 
   return (
@@ -76,6 +77,7 @@ function CoinPage() {
           </div>
           <div className="grey-wrapper">
             <SelectDays days={days} handleDaysChange={handleDaysChange} />
+            <PriceType />
             <LineChart chartData={chartData} />
           </div>
           <CoinInfo heading={coinData.name} desc={coinData.desc} />
