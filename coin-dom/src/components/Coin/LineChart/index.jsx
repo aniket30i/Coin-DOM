@@ -31,7 +31,7 @@ function LineChart({ chartData, priceType, multiAxis }) {
           },
         },
       },
-      crypto2: {
+      crypto2: multiAxis && {
         type: "linear",
         display: true,
         position: "right",

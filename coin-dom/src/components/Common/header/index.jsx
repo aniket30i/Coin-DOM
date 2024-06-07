@@ -7,9 +7,12 @@ import { Link } from "react-router-dom";
 function Header() {
   return (
     <div className="navbar">
-      <h1 className="logo">
-        CoinDOM<span style={{ color: "var(--purple)" }}>.</span>
-      </h1>
+      <Link to="/">
+        <h1 className="logo">
+          CoinDOM<span style={{ color: "var(--purple)" }}>.</span>
+        </h1>
+      </Link>
+
       <div className="links">
         <Link to="/">
           <p className="link">Home</p>

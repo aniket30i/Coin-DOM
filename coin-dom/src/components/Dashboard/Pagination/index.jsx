@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Pagination from "@mui/material/Pagination";
 import "./styles.css";
 
