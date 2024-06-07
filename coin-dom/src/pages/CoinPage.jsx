@@ -4,7 +4,7 @@ import Header from "../components/Common/header";
 import Loader from "../components/Common/loader";
 import { coinObject } from "../functions/convertObject";
 import List from "../components/Dashboard/List";
-import CoinInfo from "../components/Coin";
+import CoinInfo from "../components/Coin/CoinInfo";
 import { getCoinData } from "../functions/getCoinData";
 import { getCoinPrices } from "../functions/getCoinPrices";
 import LineChart from "../components/Coin/LineChart";

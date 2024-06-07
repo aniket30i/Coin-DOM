@@ -4,16 +4,20 @@ import TrendingDownRoundedIcon from "@mui/icons-material/TrendingDownRounded";
 import TrendingUpRoundedIcon from "@mui/icons-material/TrendingUpRounded";
 import CurrencyRupeeRoundedIcon from "@mui/icons-material/CurrencyRupeeRounded";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 function Grid({ coin }) {
   return (
     <Link to={`/coin/${coin.id}`}>
-      <div
+      <motion.div
         className={
           coin.price_change_percentage_24h > 0
             ? "grid-container"
             : "grid-container negative"
         }
+        initial={{ opacity: 0, x: 50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.7 }}
       >
         <div className="info-flex">
           <img src={coin.image} alt="coin-img" className="coin-logo" />
@@ -62,7 +66,7 @@ function Grid({ coin }) {
             {coin.market_cap.toLocaleString()}
           </p>
         </div>
-      </div>
+      </motion.div>
     </Link>
   );
 }

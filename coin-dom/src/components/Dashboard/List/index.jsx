@@ -6,11 +6,17 @@ import CurrencyRupeeRoundedIcon from "@mui/icons-material/CurrencyRupeeRounded";
 import { Tooltip } from "@mui/material";
 import { convertNumber } from "../../../functions/convertNumber";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 function List({ coin }) {
   return (
     <Link to={`/coin/${coin.id}`}>
-      <tr className="list-row">
+      <motion.tr
+        className="list-row"
+        initial={{ opacity: 0, x: 50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.7 }}
+      >
         <Tooltip title="Coin Logo" placement="bottom-start">
           <td className="td-image">
             <img src={coin.image} alt="coin-img" className="coin-logo" />
@@ -86,7 +92,7 @@ function List({ coin }) {
             </p>
           </td>
         </Tooltip>
-      </tr>
+      </motion.tr>
     </Link>
   );
 }

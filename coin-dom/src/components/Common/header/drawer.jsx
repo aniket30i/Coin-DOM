@@ -21,9 +21,9 @@ export default function AnchorTemporaryDrawer() {
           <Link href="/compare">
             <p className="link">Compare</p>
           </Link>
-          <Link href="/watchlist">
+          {/* <Link href="/watchlist">
             <p className="link">Watchlist</p>
-          </Link>
+          </Link> */}
           <Link href="/educate">
             <p className="link">Learn</p>
           </Link>

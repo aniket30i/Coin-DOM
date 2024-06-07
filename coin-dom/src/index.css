@@ -43,7 +43,9 @@ img {
   width: 90%;
   padding: 0rem 0.5rem;
   background-color: var(--darkgrey);
-  margin: 1.5rem;
+  margin: 1rem;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 0.5rem;
   padding: 1rem 1rem;
 }
