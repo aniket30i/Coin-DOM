@@ -13,8 +13,8 @@ import LineChart from "../components/Coin/LineChart";
 import TogglePriceType from "../components/Coin/PriceType";
 
 function ComparePage() {
-  const [crypto1, setCrypto1] = useState("");
-  const [crypto2, setCrypto2] = useState("");
+  const [crypto1, setCrypto1] = useState("ethereum");
+  const [crypto2, setCrypto2] = useState("dogecoin");
   const [days, setDays] = useState(30);
   const [loading, setLoading] = useState(true);
 
