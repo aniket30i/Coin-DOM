@@ -15,19 +15,19 @@ export default function AnchorTemporaryDrawer() {
       </IconButton>
       <Drawer anchor={"right"} open={open} onClose={() => setOpen(false)}>
         <div className="drawer-div">
-          <Link href="/">
+          <Link to="/">
             <p className="link">Home</p>
           </Link>
-          <Link href="/compare">
+          <Link to="/compare">
             <p className="link">Compare</p>
           </Link>
           {/* <Link href="/watchlist">
             <p className="link">Watchlist</p>
           </Link> */}
-          <Link href="/educate">
+          <Link to="/educate">
             <p className="link">Learn</p>
           </Link>
-          <Link href="/dashboard">
+          <Link to="/dashboard">
             <p className="link">Dashboard</p>
           </Link>
         </div>
