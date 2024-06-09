@@ -1,6 +1,10 @@
 # CoinDom
 
-Welcome to CoinDom - Your Ultimate Crypto Watching App!
+Welcome to CoinDom
+
+Your handy corner of the internet to visit if you just realised you should have bought some bitcoins in 2010 or maybe gambled on some meme coins like DOGE and profited off from the internet manipulated market as volatile as petrol, well thats not going to change but here you can learn and educate yourself by looking at cryto price trends and market share changes. 
+
+[Veteran and Dev tip : Every stable coin price change follows "The one Coin"😉]
 
 ![cdmain](https://github.com/aniket30i/Coin-DOM/assets/73903257/73c5a75f-ff37-454e-be19-f6a9a45db015)
 
@@ -15,24 +19,17 @@ CoinDom is a minimal and clean web application designed to help you start your j
 
 Stay informed about the latest developments in the cryptocurrency market by exploring the top 100 coins ranked by market capitalization.
 
-![Top 100 Coins](https://ibb.co/59PWQhC)
-
-### Price Comparison
-
-Easily compare the prices of two cryptocurrencies side by side to make informed investment decisions.
-
-![Price Comparison]()
-
-### Price Changes in INR
-
-View the price changes of each cryptocurrency in Indian Rupees (INR) over the past 24 hours.
+![cddash](https://github.com/aniket30i/Coin-DOM/assets/73903257/f4c3c9d5-6c4c-473a-be51-6a50e1e94aee)
 
 
 ### Interactive Graphs
 
-![Price Changes in INR](https://ibb.co/7Q2L6rm)
+![pchange](https://github.com/aniket30i/Coin-DOM/assets/73903257/aa96f4c7-6bc8-4792-93d8-09910fd36abd)
 
-Analyze cryptocurrency trends using interactive graphs powered by Chart.js.
+
+
+
+Analyze cryptocurrency trends starting from 7days to 1 year history using interactive graphs powered by Chart.js.
 
 
 ### Material UI Components
@@ -58,9 +55,15 @@ To get started with CoinDom, follow these simple steps:
 - Material UI
 - Framer Motion
 
+## Dev Notes
+- The primary goal of the project is education and not purchase therefore integration payment gateway and related components are backfooted as of now. 
+- A watchlist feature is intended as alternate to the comparison feature will be drip feeded soon.
+- The comparison feature is limited by the coingecko's public API CORS policy, due to severe cut downs in the freedom of public api only the default 2 crypto    comparison is available , changing the currency triggers several data request, blocking it completely for 1 min.
+- Learn section upon drip feeded will contain publicly available videos and article none of them are owned or licensed.
+
 ## Contributing
 
-We welcome contributions from the community! If you'd like to contribute to CoinDom, please follow these guidelines:
+If you'd like to contribute to CoinDom, please follow these guidelines:
 
 1. Fork the repository.
 2. Create your feature branch (`git checkout -b feature/YourFeature`).
