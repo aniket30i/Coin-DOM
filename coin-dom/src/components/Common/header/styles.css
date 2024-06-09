@@ -5,6 +5,8 @@
   padding: 1.5rem 3rem;
   position: sticky;
   background-color: var(--black);
+  position: sticky;
+  z-index: 1000;
 }
 
 .logo {
