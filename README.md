@@ -2,7 +2,7 @@
 
 Welcome to CoinDom - Your Ultimate Crypto Watching App!
 
-https://i.ibb.co/DLWDy7y/workingcompare3.jpg
+!https://i.ibb.co/DLWDy7y/workingcompare3.jpg
 
 
 CoinDom is a minimal and clean web application designed to help you start your journey of knowledge on the cryptocurrency market. With CoinDom, you can effortlessly track the top 100 coins, compare their performance, and analyze trends using interactive graphs.
