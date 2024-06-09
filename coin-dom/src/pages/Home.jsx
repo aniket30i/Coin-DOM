@@ -4,7 +4,7 @@ import MainComponent from "../components/LandingPage/MainComp";
 
 function HomePage() {
   return (
-    <div style={{ position: "relative" }}>
+    <div>
       <Header />
       <MainComponent />
     </div>

@@ -3,10 +3,10 @@
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 3rem;
-  position: sticky;
   background-color: var(--black);
-  position: sticky;
+  position: sticky !important;
   z-index: 1000;
+  top: 0;
 }
 
 .logo {
