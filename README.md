@@ -27,9 +27,12 @@ Stay informed about the latest developments in the cryptocurrency market by expl
 ![pchange](https://github.com/aniket30i/Coin-DOM/assets/73903257/aa96f4c7-6bc8-4792-93d8-09910fd36abd)
 
 
+![workingcompare3](https://github.com/aniket30i/Coin-DOM/assets/73903257/5c82e054-9544-42dc-b78c-a0ab420b3d08)
 
 
-Analyze cryptocurrency trends starting from 7days to 1 year history using interactive graphs powered by Chart.js.
+
+
+Analyze cryptocurrency trends starting from 7 days to 1 year history using interactive graphs powered by Chart.js.
 
 
 ### Material UI Components
@@ -77,5 +80,5 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Contact
 
-Have questions or feedback? Feel free to reach out to us at [contact@coindom.com](mailto:contact@coindom.com).
+Have questions or feedback? Feel free to reach out to us at [contact@coindom.com](mailto:aniket.saha.1809@gmail.com).
 
